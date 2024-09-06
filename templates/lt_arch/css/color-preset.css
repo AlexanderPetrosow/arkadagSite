@@ -1,0 +1,110 @@
+/* General color defination
+Color value depend on preset color that picking on template settings > Presets
+*/
+
+:root {
+    --background-color: currentColor;
+    --background: currentColor;
+    --text-color: currentColor;
+}
+#sp-top-bar,
+.lt-btn,
+.lt-btn:hover,
+.lt-title.line-bottom h2:after,
+.lt-title.line-top h6:before,
+.lt-slider-btn a,
+.lt-title h3:after,
+#sp_qc_submit:hover,
+.lt-slider-text:before,
+.lt-title p:before,
+.skills .progress-bar, 
+.lt-about-item-content a,
+.lt-choose-item:hover,
+.skills span, 
+.skills pan:after,
+#sp_qc_submit,
+.lt-feature-item:after,
+#offcanvas-toggler,
+.lt-offer-right,
+.line-title .sppb-section-title:before,
+.lt-about-us .sppb-title-heading:before,
+div.k2ItemsBlock ul li:after,
+div.k2ItemsBlock ul li:hover .moduleItemReadMore:after,
+.lt-feature-item:hover .sppb-addon-content a,
+.sppb-panel-heading.active i,
+.lt-team-item ul li a.share,
+.skill-box .skills-circle  ul > li,
+.skill-box .skills-circle ul > li > span.bar-circle-cover,
+div.itemCommentsForm form input#submitCommentButton,
+div.itemCommentsForm form input#submitCommentButton:hover,
+.creativecontactform_wrapper input.creativecontactform_send,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:after,
+.lt-title h4::after,
+.lt-product-item-right:hover .sppb-icon-container,
+.sp-megamenu-parent > li .sp-menu-badge {
+   background: var(--background-color);
+}
+.lt-title h6,
+.lt-slider-content a:hover,
+.lt-slider-content a:hover:after,
+.lt-about-btn:hover,
+.lt-about-btn:hover:after,
+.lt-our-item h5,
+.lt-our-item i,
+.lt-choose-list ul li:before,
+.lt-product-item h5,
+.lt-explore-content h4,
+.lt-testimonial-person span,
+.lt-slider-text-color,
+.lt-blog h3,
+#sp_qc_submit,
+.lt-btn-no-bg,
+.lt-step-item h6,
+.lt-together h1 span,
+.lt-contact .lt-title h4,
+.lt-slider-button-text strong,
+.lt-testimonial-content i,
+.lt-about-item-content h3,
+.lt-counter-item h6,
+.skills .cont p,
+.lt-about-item a:hover,
+.video-item figure a:hover:after,
+.lt-intro-title .sppb-addon-content:before,
+.lt-intro-item:hover .sppb-icon i,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li:hover > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.lt-product-item-left .sppb-icon-container i,
+.lt-product-item-right .sppb-icon-container i,
+div.k2ItemsBlock ul li a {
+	color: var(--text-color);
+}
+#sp-bottom a,
+#lt-pricing .lt-pricing-2 a.button-pricing:hover,
+.lt-feature-item .sppb-icon-container i,
+#sp-bottom1 ul:hover .text,
+#sp-bottom1 ul:hover .icon em, .lt-counter-item i {
+  	color: var(--text-color)!important;
+}
+.lt-service-column .clearfix {
+   border-top-color: var(--text-color);
+}
+.lt-slider-content,
+.lt-choose-item,
+.lt-about-item img,
+#sp_qc_submit,
+.lt-plan-item,
+.lt-slider-content a,
+.lt-service-column .clearfix:hover {
+   border-color:var(--text-color);
+}
+.btn-large, .button.btn-large,
+.j2store-cart-button.btn.btn-primary:hover,
+.lt-team-item .sppb-img-container:after,
+#lt-pricing .lt-pricing-2:after,
+.sppb-panel-modern>.sppb-panel-heading.active:after {
+    background: var(--background-color)!important;
+}
+.video-item figure a:after:hover {
+	border: 1px solid var(--text-color);
+}
+

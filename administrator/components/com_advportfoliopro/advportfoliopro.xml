@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2013 Skyline Technology Ltd (http://extstore.com). All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+ -->
+
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_advportfoliopro</name>
+	<author>ExtStore</author>
+	<creationDate>July 2018</creationDate>
+	<copyright>(C) 2010 - 2018 Skyline Technology Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@extstore.com</authorEmail>
+	<authorUrl>http://extstore.com</authorUrl>
+	<version>4.1.1</version>
+	<description>
+	<![CDATA[
+		<div class="well well-small" style="font-weight: normal; text-align: left; color: #333;">
+			<div class="module-title nav-header">
+				ExtStore Advanced Portfolio Pro
+			</div>
+			<div>
+				<table class="table table-striped" style="margin-bottom: 0;" border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+				<tr>
+					<td colspan="2">
+						 Advanced Portfolio is an extension for Joomla 3 developed by ExtStore Team. With clean theme, responsive design, it is a complete solution for anyone who wants to build portfolio pages on Joomla website.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Version:
+					</td>
+					<td>
+						4.1.1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Author:
+					</td>
+					<td>
+						<a href="http://extstore.com" target="_blank">extstore.com</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Copyright:
+					</td>
+					<td>
+						© Skyline Technology Ltd, All rights reserved.
+					</td>
+				</tr>
+				<!--<tr>
+					<td>Document:</td>
+					<td><a href="" target="_blank">Read document</a></td>
+				</tr>-->
+				<tr>
+					<td>
+						Support:
+					</td>
+					<td>
+						<a href="http://support.extstore.com/" target="_blank">Contact us or submit a ticket</a>
+					</td>
+				</tr>
+				<tr>
+					<td>JED:</td>
+					<td><a href="http://extensions.joomla.org/extensions/directory-a-documentation/portfolio/26386" target="_blank">Vote and write review on JED</a></td>
+				</tr>
+				<tr>
+					<td>
+						Facebook:
+					</td>
+					<td>
+						<a href="http://facebook.com/extstore" target="_blank">http://facebook.com/extstore</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Twitter:
+					</td>
+					<td>
+						<a href="http://twitter.com/extstore" target="_blank">http://twitter.com/extstore</a>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	]]>
+	</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<updateservers>
+		<server name="Advanced Portfolio Pro Updates" type="extension">http://extstore.com/update/advportfoliopro.xml</server>
+	</updateservers>
+	
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>advportfoliopro.php</filename>
+		<filename>controller.php</filename>
+		<filename>metadata.xml</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB.com_advportfoliopro.ini</language>
+	</languages>
+
+	<media folder="media" destination="com_advportfoliopro">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<filename>index.html</filename>
+	</media>
+	
+	<administration>
+		<menu>com_advportfoliopro</menu>
+		<submenu>
+			<menu link="option=com_advportfoliopro&amp;view=projects" view="projects">com_advportfoliopro_submenu_projects</menu>
+			<menu link="option=com_categories&amp;extension=com_advportfoliopro" view="categories" alt="Advanced Portfolio Pro/Categories">com_advportfoliopro_submenu_categories</menu>
+		</submenu>
+
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>advportfoliopro.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_advportfoliopro.ini</language>
+			<language tag="en-GB">language/en-GB.com_advportfoliopro.sys.ini</language>
+		</languages>
+	</administration>
+
+	<modules folder="modules">
+		<module name="mod_advportfoliopro" />
+	</modules>
+
+	<plugins folder="plugins">
+		<plugin folder="finder" name="advportfoliopro" group="finder" />
+		<plugin folder="search" name="advportfoliopro" group="search" />
+		<plugin name="extstore_update_helper" group="system" enable="1" />
+	</plugins>
+</extension>
+

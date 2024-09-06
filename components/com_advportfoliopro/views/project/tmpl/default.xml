@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ADVPORTFOLIOPRO_PROJECT_VIEW_DEFAULT_TITLE" option="COM_ADVPORTFOLIOPRO_PROJECT_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_ADVPORTFOLIOPRO_PROJECT_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_advportfoliopro/models/fields">
+
+			<field
+				name="id"
+				type="modal_project"
+				label="COM_ADVPORTFOLIOPRO_FIELD_SELECT_PROJECT_LABEL"
+				required="true"
+				description="COM_ADVPORTFOLIOPRO_FIELD_SELECT_PROJECT_DESC"
+			/>
+		</fieldset>
+	</fields>
+
+	<fields name="params" addfieldpath="/administrator/components/com_categories/models/fields">
+		<fieldset name="options" label="COM_ADVPORTFOLIOPRO_PROJECT_PARAMS_FIELDSET_OPTIONS">
+			<field
+				name="show_title"
+				type="radio"
+				class="btn-group"
+				default=""
+				label="JGLOBAL_SHOW_TITLE_LABEL"
+				description="COM_ADVPORTFOLIOPRO_CONFIG_FIELD_SHOW_TITLE_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_description"
+				type="radio"
+				class="btn-group"
+				default=""
+				label="COM_ADVPORTFOLIOPRO_CONFIG_FIELD_SHOW_DESCRIPTION_LABEL"
+				description="COM_ADVPORTFOLIOPRO_CONFIG_FIELD_SHOW_DESCRIPTION_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="description_position"
+				type="list"
+				default=""
+				label="COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_POSITION_LABEL"
+				description="COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_POSITION_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="top">COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_POSITION_TOP</option>
+				<option value="right">COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_POSITION_RIGHT</option>
+				<option value="bottom">COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_POSITION_BOTTOM</option>
+				<option value="left">COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_POSITION_LEFT</option>
+			</field>
+
+			<field
+				name="description_width"
+				type="list"
+				default=""
+				label="COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_WIDTH_LABEL"
+				description="COM_ADVPORTFOLIOPRO_CONFIG_FIELD_DESCRIPTION_WIDTH_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+			</field>
+
+			<field
+				name="show_noauth"
+				type="radio"
+				class="btn-group"
+				default=""
+				label="JGLOBAL_SHOW_UNAUTH_LINKS_LABEL"
+				description="JGLOBAL_SHOW_UNAUTH_LINKS_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

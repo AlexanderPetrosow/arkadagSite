@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2015 Skyline Technology Ltd (http://extstore.com). All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+	<name>plg_system_extstore_update_helper</name>
+	<author></author>
+	<creationDate>July 2015</creationDate>
+	<copyright>Copyright (c) 2015 ExtStore. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@extstore.com</authorEmail>
+	<authorUrl>http://extstore.com</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		Helper for auto update extensions for http://extstore.com
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="extstore_update_helper">extstore_update_helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_extstore_update_helper.ini</language>
+		<language tag="en-GB">en-GB.plg_system_extstore_update_helper.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="dlid"
+					type="text"
+					label="PLG_MEDIASTORE_JOOMLA_FIELD_DLID_LABEL"
+					description="PLG_MEDIASTORE_JOOMLA_FIELD_DLID_DESC"
+					labelclass="control-label"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

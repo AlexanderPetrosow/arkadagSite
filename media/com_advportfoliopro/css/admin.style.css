@@ -1,0 +1,274 @@
+/**
+ * @copyright	Copyright (c) 2013 Skyline Technology Ltd (http://extstore.com). All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+.xcopyright {
+	clear: both;
+	color: #666666;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	text-align: center;
+	text-shadow: 0 1px 1px #DDDDDD;
+	font-size: 12px;
+	width: 100%;
+}
+
+.xtitle {
+	background: #AAA;
+	color: #FFF;
+	text-shadow: 0 1px 1px #888888;
+	font-weight: bold;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.table-list tbody tr {
+	height: 39px;
+}
+
+#cpanel {
+    clear: both;
+    min-height: 150px;
+    overflow: hidden;
+    padding-top: 12px;
+}
+
+#cpanel a {
+    display: block;
+    float: left;
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+    width: 80px;
+}
+
+#sidebar #submenu a[href*="com_advportfoliopro&view=dashboard"]:before {
+    content: "! ";
+    font-family: "IcoMoon";
+}
+
+#sidebar #submenu a[href*="com_advportfoliopro&view=projects"]:before {
+    content: "X ";
+    font-family: "IcoMoon";
+}
+
+#sidebar #submenu a[href*="com_categories"]:before {
+    content: "- ";
+    font-family: "IcoMoon";
+}
+
+#ftp-form ul {
+	padding-top: 10px;
+}
+
+#ftp-form ul label {
+	min-width: 100px;
+}
+
+#upload-form input {
+	float: none;
+}
+
+a.download-button,
+a.delete-button {
+	display: block;
+	text-indent: -999em;
+	background: url(../images/download.png) no-repeat center;
+	line-height: 16px;
+}
+
+a.delete-button {
+	background-image: url(../images/delete.png);
+}
+
+.manager-image .intro-item {
+	border: 1px solid #ddd;
+	padding: 4px;
+	display: inline-block;
+}
+
+.manager-image .intro-item .imagecontrol {
+	position: relative;
+	margin-top: 4px;
+}
+
+div.imagecontrol {
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	background: #f9fcf9;
+	border-top: 1px solid #ddd;
+	font-size: 12px;
+}
+
+div.imagecontrol .delete-button {
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+}
+
+div.imagecontrol input[type="checkbox"] {
+	margin: 4px 0 0 0;
+}
+
+div.imageinfo {
+	background: #f9f9f9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	width: 88px;
+	height: 15px;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
+	clear: both;
+}
+
+.image-preview {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.images-container {
+	margin: 0;
+}
+
+.images-container li {
+	list-style: none;
+	position: relative;
+	margin-bottom: 30px;
+	display: block;
+	float: left;
+	width: 300px;
+}
+
+.images-container .image-sortable {
+	position: absolute;
+	width: 14px;
+	top: 0;
+	bottom: 0;
+	background-color: #999;
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	border-radius: 10px;
+	cursor: move;
+}
+
+.images-container .image-sortable:hover {
+	background-color: #33bbde;
+}
+
+.images-container .image-container {
+	margin-left: 22px;
+}
+
+.image-title {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.dropzone .upload-options {
+	position: absolute;
+	right: 10px;
+	bottom: 3px;
+}
+
+.xheader {
+	clear: both;
+	padding-top: 10px;
+}
+
+.xheader span {
+	background: #d5e7fa none repeat scroll 0 0;
+	border-bottom: 2px solid #96b0cb;
+	color: #336699;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-left: -10px;
+	padding: 7px 10px;
+}
+
+.thumbnail {
+	display: block;
+	padding: 4px;
+	line-height: 18px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.055);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.055);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.055);
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.thumbnails > li {
+	float: left;
+	margin-bottom: 18px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.width-110 {
+	width: 110px;
+}
+
+.subhead .mediamanager-control {
+	margin-top: 12px;
+}
+
+.img-polaroid {
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn.btn-micro {
+	padding: 1px 4px;
+	line-height: 8px;
+}
+
+.mediamanager-control input[type="text"]{
+	margin-bottom: 0;
+}
+
+.com_advportfoliopro .row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -7.5px;
+	margin-left: -7.5px;
+}
+.com_advportfoliopro [class*="col-md"] {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 7.5px;
+	padding-left: 7.5px;
+}
+
+.com_advportfoliopro #j-sidebar-container {
+	position: absolute;
+	display: block;
+	width: 16.5%;
+}
+
+.com_advportfoliopro #j-main-container {
+	width: 82.87292818%;
+	float: right;
+	padding: 0 0 0 5px;
+	min-height: 0;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2014 Skyline Software (http://extstore.com). All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+-->
+<extension type="plugin" version="1.7" group="search" method="upgrade">
+	<name>plg_search_advportfoliopro</name>
+	<author>ExtStore</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>Copyright (c) 2014 Skyline. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@extstore.com</authorEmail>
+	<authorUrl>http://extstore.com</authorUrl>
+	<version>3.8.2</version>
+	<description>
+	<![CDATA[
+		Enables searching of Advanced Portfolio Pro Component 
+		<br /><br />
+		Developed by Skyline Software (<a target="_blank" href="http://extstore.com">http://extstore.com</a>).
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="advportfoliopro">advportfoliopro.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_search_advportfoliopro.ini</language>
+		<language tag="en-GB">en-GB.plg_search_advportfoliopro.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="search_limit"
+					type="text"
+					default="50"
+					labelclass="control-label"
+					description="PLG_SEARCH_ADVPORTFOLIOPRO_FIELD_SEARCHLIMIT_DESC"
+					label="PLG_SEARCH_ADVPORTFOLIOPRO_FIELD_SEARCHLIMIT_LABEL"
+					size="5"
+				/>
+
+				<field
+					name="search_content"
+					type="radio"
+					class="btn-group"
+					labelclass="control-label"
+					default="1"
+					description="PLG_SEARCH_ADVPORTFOLIOPRO_FIELD_CONTENT_DESC"
+					label="PLG_SEARCH_ADVPORTFOLIOPRO_FIELD_CONTENT_LABEL"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+
+				<field
+					name="search_archived"
+					type="radio"
+					class="btn-group"
+					labelclass="control-label"
+					default="0"
+					description="PLG_SEARCH_ADVPORTFOLIOPRO_FIELD_ARCHIVED_DESC"
+					label="PLG_SEARCH_ADVPORTFOLIOPRO_FIELD_ARCHIVED_LABEL"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
